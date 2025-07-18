@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-CREATE TABLE IF NOT EXISITS alerts (
+CREATE TABLE IF NOT EXISTS alerts (
     id SERIAL PRIMARY KEY,
     symbol VARCHAR(20),
     signal_type VARCHAR(10),
