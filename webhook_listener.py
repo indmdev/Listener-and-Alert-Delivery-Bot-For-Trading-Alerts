@@ -7,7 +7,7 @@ app = FastAPI()
 async def webhook_listener(request: Request):
     data = await request.json()
     symbol = data['symbol']
-    signal_type = data['signal_type']  # "LONG" or "SHORT"
+    signal_type = data['signal_type']  # "LONG" or "SHORT" 
     entry = data['entry']
     sl = data['stop_loss']
     tp = data['take_profit']
