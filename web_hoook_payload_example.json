@@ -1,0 +1,8 @@
+{
+  "symbol": "BTCUSD",
+  "signal_type": "LONG",
+  "entry": "30000",
+  "stop_loss": "29500",
+  "take_profit": "31000",
+  "timestamp": "2025-07-18T12:30:00Z"
+}
