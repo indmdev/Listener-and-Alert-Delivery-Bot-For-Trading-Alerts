@@ -4,6 +4,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+CREATE TABLE IF NOT EXISITS alerts (
+    id SERIAL PRIMARY KEY,
+    symbol VARCHAR(20),
+    signal_type VARCHAR(10),
+    entry DECIMAL,
+    stop_loss DECIMAL,
+    take_profit DECIMAL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+
 def connect_db():
     conn = psycopg2.connect(
         host=os.getenv('DATABASE_HOST'),
